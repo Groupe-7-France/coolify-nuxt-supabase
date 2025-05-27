@@ -4,12 +4,4 @@ services:
     build:
       context: .
       dockerfile: Dockerfile.prod
-  supabase-db:
-    image: 'supabase/postgres:15.6.1.146'
-    healthcheck:
-      test: 'pg_isready -U postgres -h 127.0.0.1'
-      interval: 5s
-      timeout: 5s
-      retries: 10
-    ports:
-      - ${POSTGRES_PORT:-5432}:${POSTGRES_PORT:-5432}
+ 
