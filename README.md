@@ -1,0 +1,1 @@
+# coolify-nuxt-supabase
