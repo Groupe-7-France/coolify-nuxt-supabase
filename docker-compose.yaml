@@ -11,8 +11,5 @@ services:
       interval: 5s
       timeout: 5s
       retries: 10
-    depends_on:
-      supabase-vector:
-        condition: service_healthy
     ports:
       - ${POSTGRES_PORT:-5432}:${POSTGRES_PORT:-5432}
